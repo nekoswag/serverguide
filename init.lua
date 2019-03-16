@@ -44,7 +44,7 @@ end)
 
 minetest.register_tool("serverguide:book", {
 	description = serverguide_Book_title,
-	inventory_image = "default_book.png",
+	inventory_image = "book_serverguide.png",
 	on_use = function(itemstack, user, pointed_thing)
 	serverguide_guide(user,1)
 	return itemstack
@@ -82,7 +82,7 @@ minetest.register_node("serverguide:guide", {
 		fixed = {0.35,-0.3,0.45,-0.35,-0.5,-0.45},
 	},
 	tiles = {
-	"default_gold_block.png^default_book.png",
+	"default_gold_block.png^book_serverguide.png",
 	"default_gold_block.png",
 	"default_gold_block.png",
 	"default_gold_block.png",
